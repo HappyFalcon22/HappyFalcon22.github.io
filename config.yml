@@ -1,5 +1,5 @@
 # Base URL, all other subpages wil share this prefix
-baseURL: "https://happyfalcon22.github.io/"
+baseURL: ""
 
 # Language
 languageCode: en-us
