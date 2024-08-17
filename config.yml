@@ -14,6 +14,15 @@ theme: ["PaperMod"]
 params:
   defaultTheme: auto
 
+  profileMode:
+    enabled: true
+    title: "Welcome to my home" # optional default will be site title
+    subtitle: "My personal blog for Cryptography and CTFs"
+    imageURL: "logo.jpg"
+    imageTitle: "Yes. It's a capybara"
+    imageWidth: 400
+    imageHeight: 400
+
   cover:
     linkFullImages: true
 
@@ -24,13 +33,20 @@ params:
   socialIcons: # optional
     - name: facebook
       url: https://www.facebook.com/
-    - name: "email"
-      url: "https://www.facebook.com/"
+    - name: twitter
+      url: https://www.twitter.com/
+    - name: linkedin
+      url: https://www.linkedin.com/
+    - name: github
+      url: https://www.github.com/
+    - name: email
+      url: "mailto:info@example.com"
 
   ShowBreadcrumbs: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
 
 menu:
   main:
