@@ -6,8 +6,15 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- 0.117.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Aug 2024 22:37:26 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2024 10:55:55 +0700</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sat, 17 Aug 2024 10:55:55 +0700</pubDate>
+      <guid>/about/</guid>
+      <description>👋 About Me Hello, my name is Thang Trinh Cao. I hold a Bachelor&amp;rsquo;s degree in Computer Engineering and am currently pursuing a Master&amp;rsquo;s degree in Computer Science. My specialization is in cybersecurity, with a particular focus on cryptography. I am deeply interested in Zero-Knowledge Proofs (ZKP), and I have completed a thesis on this topic. Additionally, I have a strong passion for Machine Learning and mathematics. I also enjoy participating in Capture the Flag (CTF) competitions and am a member of the BKISC team, a cybersecurity club for undergraduates at my university.</description>
+    </item>
     <item>
       <title>Second</title>
       <link>/posts/second/</link>

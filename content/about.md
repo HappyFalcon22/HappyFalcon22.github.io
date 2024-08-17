@@ -30,3 +30,5 @@ Hello, my name is ***Thang Trinh Cao***. I hold a Bachelor's degree in Computer 
 - **✍️ Blog Writing:** Writing about Zero-Knowledge Proofs and Cryptography.
 - **📄 Academic Writing:** Improving my academic writing skills.
 - **🎓 Google Cybersecurity Certificate:** Currently working towards this certification.
+
+Fuck
