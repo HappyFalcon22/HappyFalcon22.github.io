@@ -74,7 +74,10 @@
             {{- end }}
             <div class="logo-switches">
                 {{- if (not site.Params.disableThemeToggle) }}
-                <button id="theme-toggle" accesskey="t" onclick="document.getElementById('light-switch').play()" title="(Alt + T)">
+                <audio id="light-switch">
+                    <source src="./sounds/light-switch.mp3" type="audio/mpeg">
+                </audio>
+                <button id="theme-toggle" accesskey="t" onclick="play()" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -93,7 +96,6 @@
                         <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
-                    <audio id="light-switch" src="../../static/light-switch.mp3">  </audio>
                 </button>
                 {{- end }}
 
@@ -148,3 +150,11 @@
         </ul>
     </nav>
 </header>
+
+<script>
+    function play() {
+        var audio = document.getElementById('light-switch');
+        console.log(audio.play());
+
+    }
+</script>
