@@ -6,27 +6,37 @@ draft: false
 
 # 👋 About Me
 
-Hello, my name is ***Thang Trinh Cao***. I hold a Bachelor's degree in Computer Engineering and am currently pursuing a Master's degree in Computer Science. My specialization is in **cybersecurity**, with a particular focus on **cryptography**. I am deeply interested in **Zero-Knowledge Proofs (ZKP)**, and I have completed a thesis on this topic. Additionally, I have a strong passion for **Machine Learning** and **mathematics**. I also enjoy participating in **Capture the Flag (CTF)** competitions and am a member of the **BKISC** team, a cybersecurity club for undergraduates at my university.
+Hello! I'm ***Thang Trinh Cao***, a Computer Engineering graduate now pursuing a Master’s degree in Computer Science. My academic journey has led me to specialize in **cybersecurity**, with a keen focus on **cryptography**. I am particularly fascinated by **Zero-Knowledge Proofs (ZKP)**, and my thesis delves deeply into this subject. Beyond cryptography, I have a strong passion for **Machine Learning** and **mathematics**. I'm also an avid participant in **Capture the Flag (CTF)** competitions and a proud member of the **BKISC** team, a cybersecurity club at my university.
 
-## 🎓 Achievements
+# 🎓 Education
 
-### 💻 Programming Languages
-- **Python:** My primary programming language for CTFs and math-based subjects.
-- **C and C++:** The languages I started with, which have been instrumental in my programming courses.
-- **Rust:** A newer language I learned during my internship at Orochi Network.
+- **Bachelor’s Degree:** Computer Engineering, Bach Khoa University of Technology, Ho Chi Minh City
+- **Master’s Degree (in progress):** Computer Science, with a focus on Cybersecurity and Cryptography
+- **Internship:** Programmer and project contributor in cryptography at Orochi Network
 
-### 🛠 Relevant Skills
-- **📝 Report Writing:** Proficient in using LaTeX for writing reports.
-- **🤝 Teamwork:** I consider my teamwork skills to be average.
-- **⏰ Time Management:** Strong time management abilities.
+# 🔍 Areas of Interest
 
-## 📚 Working Topics
-- **🔒 Zero-Knowledge Proofs (ZKP):** Gaining fundamental knowledge.
-- **🧩 Witness Encryption:** Currently researching papers for my Master's thesis.
-- **🔐 Cryptography:** Studying from textbooks to deepen my understanding (I initially learned cryptography through Cryptohack, which provided an ad-hoc learning experience).
-- **➗ Number Theory:** Learning the basics from scratch.
+- **Cybersecurity,** especially **Cryptography**
+- **Zero-Knowledge Proofs (ZKP)**
+- **Machine Learning**
+- **Mathematics**
+- **Internet of Things (IoT)**
 
-## 🌱 Soft Skills Development
-- **✍️ Blog Writing:** Writing about Zero-Knowledge Proofs and Cryptography.
-- **📄 Academic Writing:** Improving my academic writing skills.
-- **🎓 Google Cybersecurity Certificate:** Currently working towards this certification.
+# 🛡️ CTF Experience
+
+- **Crypto Team Member:** Since 2022, a core member of the Crypto team at **BKISC**
+  - **Contributions:**
+    - Participated in major CTF events
+    - Mentored new members
+    - Authored CTF challenges for recruitment
+- **Cryptohack Ranking:** Currently ranked 6th in Vietnam
+
+# 💻 Programming Languages
+
+- **C++ (Intermediate):** First programming language, used for Data Structures and Algorithms courses
+- **R (Beginner):** Used for data analysis in a Discrete Math course project
+- **Python (Advanced):** Primary language for learning cryptography and Machine Learning (also used Z3 and SageMath for cryptography and CTF challenges)
+- **Rust (Intermediate):** Learned during an internship at Orochi Network for cryptography projects
+- **Verilog (Intermediate):** Learned through Computer Engineering courses
+- **Web Programming (Beginner):** Focused on building blogs
+
