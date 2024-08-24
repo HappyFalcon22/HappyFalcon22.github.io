@@ -14,7 +14,15 @@
     border-radius: 50%;
     border: 1px solid;
 }
+
+* {
+    cursor: url('/images/cursor/cursor.png'), auto;
+}
  
+a:hover {
+    cursor: url('/images/cursor/cursor-hover.png'), auto !important;
+}
+
 @keyframes ripple-effect {
 to {
     transform: scale(25);
