@@ -17,52 +17,7 @@
 {{- print " dark" }}
 {{- end -}}
 " id="top">
-<div id="overlay"> </div>
-<script>
-    const dots = [];
-    const cursor = {
-      x: 0,
-      y: 0,
-    };
-
-    for (let i = 0; i < 40; i++) {
-      const dot = document.createElement("div");
-      dot.className = "dot";
-      document.body.appendChild(dot);
-      dots.push(dot);
-    }
-
-    document.addEventListener("mousemove", (e) => {
-      cursor.x = e.clientX;
-      cursor.y = e.clientY;
-    });
-
-    function draw() {
-      let x = cursor.x;
-      let y = cursor.y;
-
-      dots.forEach((dot, index) => {
-        const nextDot = dots[index + 1] || dots[0];
-
-        dot.style.left = x + "px";
-        dot.style.top = y + "px";
-
-        x += (nextDot.offsetLeft - dot.offsetLeft) * 0.6;
-        y += (nextDot.offsetTop - dot.offsetTop) * 0.6;
-      });
-    }
-
-    setInterval(draw, 4);
-  </script>
     {{- partialCached "header.html" . .Page -}}
-    <div id="yellow-cursor" onclick="cursorYellow()"> </div>
-    <div id="red-cursor" onclick="cursorRed()"> </div>
-    <div id="green-cursor" onclick="cursorGreen()"> </div>
-    <div id="blue-cursor" onclick="cursorBlue()"> </div>
-    <div id="pink-cursor" onclick="cursorPink()"> </div>
-    <div id="purple-cursor" onclick="cursorPurple()"> </div>
-    <div id="black-cursor" onclick="cursorBlack()"> </div>
-    <div id="white-cursor" onclick="cursorWhite()"> </div>
     <main class="main">
         {{- block "main" . }}{{ end }}
     </main>
@@ -70,53 +25,19 @@
 </body>
 
 <script>
-  function cursorYellow() {
-    var cursor = document.getElementsByClassName("dot");
-    for (var i = 0; i < cursor.length; i++) {
-      cursor[i].style.background = "yellow";
-    }
-  }
-  function cursorRed() {
-    var cursor = document.getElementsByClassName("dot");
-    for (var i = 0; i < cursor.length; i++) {
-      cursor[i].style.background = "red";
-    }
-  }
-  function cursorGreen() {
-    var cursor = document.getElementsByClassName("dot");
-    for (var i = 0; i < cursor.length; i++) {
-      cursor[i].style.background = "green";
-    }
-  }
-  function cursorBlue() {
-    var cursor = document.getElementsByClassName("dot");
-    for (var i = 0; i < cursor.length; i++) {
-      cursor[i].style.background = "blue";
-    }
-  }
-  function cursorPink() {
-    var cursor = document.getElementsByClassName("dot");
-    for (var i = 0; i < cursor.length; i++) {
-      cursor[i].style.background = "pink";
-    }
-  }
-  function cursorPurple() {
-    var cursor = document.getElementsByClassName("dot");
-    for (var i = 0; i < cursor.length; i++) {
-      cursor[i].style.background = "purple";
-    }
-  }
-  function cursorBlack() {
-    var cursor = document.getElementsByClassName("dot");
-    for (var i = 0; i < cursor.length; i++) {
-      cursor[i].style.background = "rgb(30, 30, 30)";
-    }
-  }
-  function cursorWhite() {
-    var cursor = document.getElementsByClassName("dot");
-    for (var i = 0; i < cursor.length; i++) {
-      cursor[i].style.background = "white";
-    }
+  document.onclick = () => applyCursorRippleEffect(event); 
+
+  function applyCursorRippleEffect(e) {
+    const ripple = document.createElement("div");
+
+    ripple.className = "ripple";
+    document.body.appendChild(ripple);
+
+    ripple.style.left = `${e.clientX}px`;
+    ripple.style.top = `${e.clientY}px`; 
+    ripple.style.border = `1px solid ${`#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`}`;
+    ripple.style.animation = "ripple-effect 2.5s ease-in-out";
+    ripple.onanimationend = () => document.body.removeChild(ripple);
   }
 </script>
 
