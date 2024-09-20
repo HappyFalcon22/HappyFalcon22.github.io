@@ -16,11 +16,11 @@
 }
 
 * {
-    cursor: url('/images/cursor/cursor.png'), auto;
+    cursor: url('/images/cursor/Ajaw.png'), auto;
 }
  
 a:hover {
-    cursor: url('/images/cursor/cursor-hover.png'), auto !important;
+    cursor: url('/images/cursor/Ajaw.png'), auto !important;
 }
 
 @keyframes ripple-effect {
